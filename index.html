@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reino dos contos</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+    <script src="js/jquery.min.js"></script>
+    <style>
+        .fonte{
+       font-family: "Brush Script MT, Brush Script Std, cursive	"
+        }
+        .centro {
+            text-align: center;
+            display:flex;
+            justify-content: ceter;
+        }
+     .anima {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+.imagemexe{
+    animation-duration: 2s;
+    animation-name: mexeu;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes mexeu {
+  from {
+    background-image: url('img/corvo fechado.png');
+  }
+  to {
+    background-image: url('img/corvo aberto.png');
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.bordabaixo{
+    border-bottom: 2px solid white;
+}
+
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fonte">
+    <div class="container ">
+        <div class="container row mr">
+        <a class="navbar-brand d-flex justify-content-center"><img class="img-fluid" width="50px" src="img/polvo-icon2.png "><h1 class="bordabaixo">Biblioteca do horror</h1><img class="img-fluid" width="40px" height="40px" src="img/corvo-icon.png "></a>
+            </div> 
+          <button class="navbar-toggler col-12" type="button" data-bs-toggle="collapse" data-bs-target="#menu-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-target">
+            <ul class="navbar-nav ms-auto flex-column justify-content-center align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contos.html">Contos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+    <header class="bg-dark fonte text-white py-4">
+        <div class="container text-center mt-5">
+            <h1 class="display-5 anima">Bem-vindo(a) a biblioteca do horror </h1>
+            <p class="lead anima">Explore histórias de terror e mistério de varios autores da literatura clássica.</p><br>
+             </div>
+            <div class="centro">
+        </header>
+
+        </div>
+<div class="container-fluid bg-warning py-4">
+    <div class="row border-warning justify-content-center">
+        <div class="card bg-dark text-white col-md-4 ">
+            <img src="img/corvo_olhos.gif" class="card-img-top" alt="Contos de terror">
+            <div class="card-body">
+                <h5 class="card-title">Contos de terror</h5>
+                <p class="card-text">Explore uma coleção de contos de terror clássicos e modernos, mergulhando em histórias curtas que vão arrepiar você.</p>
+                <a href="contos.html" class="btn btn-primary">Leia mais</a>
+            </div>
+        </div>
+        <div class="card bg-dark text-white col-md-4 ">
+            <img height="150%" src="img/lovecraft.gif" class="card-img-top" alt="Biografias">
+            <div class="card-body">
+                <h5 class="card-title">Biografia dos autores</h5>
+                <p class="card-text">Descubra mais sobre a vida e processos criativos dos principais autores.</p>
+             <a href="contos.html" class="btn btn-primary">Leia mais</a>
+            </div>
+        </div>
+              <div class="card bg-dark text-white col-md-4 ">
+            <img height="150%" src="img/necronomicon.gif" class="card-img-top" alt="Biografias">
+            <div class="card-body">
+                <h5 class="card-title">Livros de terror</h5>
+                <p class="card-text">Coletânea de livros para o seu pavor, explore mais um dos genêros mais crípticos, densos e ricos da literatura.</p>
+             <a href="contos.html" class="btn btn-primary">Leia mais</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
